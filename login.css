@@ -205,7 +205,7 @@ body {
 
 .ad-banner {
   position: absolute;
-  top: calc(100% + 20px); /* Position the ad banner below the form with a 20px gap */
+  top: calc(100% + 30px); /* Position the ad banner below the form with a 20px gap */
   right: 400px; 
 }
 
