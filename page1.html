@@ -1,0 +1,325 @@
+<!-- Name: ديفيد شحاته داود شحاته ID: 20230196 -->
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width-device-width, intial-scale=1.0" />
+	<title>Cooking Tools</title>
+<link id ="theme"  href="theme.css" rel="stylesheet" type="text/CSS"/>
+<!-- <link href="D:\Project\theme.css" rel="stylesheet"/> -->
+
+</head>
+<style>
+  /* Container for the button to position it at the top right */
+.button {
+    position: fixed; /* Fixed position */
+    top: 215px; /* Distance from the top */
+    right: 10px; /* Distance from the right */
+  }
+  
+  /* Styling for the search button */
+  .button {
+    padding: 10px 20px;
+    background-color: #7bdf7d; /* Button color */
+    color: white; /* Text color */
+    border: none;
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect */
+    transition: all 0.3s;
+  }
+  
+  /* Hover effect for the button */
+  .button:hover {
+    background-color: #b97d29; /* Darker shade on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Larger shadow on hover */
+  }
+  
+  /* Active effect for the button */
+  .button:active {
+    transform: translateY(4px); /* Slight push down */
+  }
+  
+          
+.highlight { background-color: yellow; }
+ 
+             #adam {
+              font-size: 2.5rem;
+              top: 1000px;
+              color: #5d0af7; /* Orange color */
+              text-align: center;
+              margin: 90px auto; /* Increased space around the heading */
+              border: 4px solid #333; /* Enlarged border */
+              padding: 30px;
+              border-radius: 10px;
+              box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Enhanced shadow for depth */
+              background-image: linear-gradient(to right, #8fee77, #b2f383); /* Gradient background */
+              animation: fadeIn 1s ease-in-out; /* Fade-in animation */
+          }
+  
+          /* Keyframes for fade-in animation */
+          @keyframes fadeIn {
+              from {
+                  opacity: 0;
+              }
+              to {
+                  opacity: 1;
+              }
+          }
+  
+          /* Subtle pulsing effect */
+          @keyframes pulse {
+              0% {
+                  transform: scale(1);
+                  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+              }
+              50% {
+                  transform: scale(1.02);
+                  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+              }
+              100% {
+                  transform: scale(1);
+                  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+              }
+          }
+  
+          #adam:hover {
+              animation: pulse 1.5s infinite;
+          }
+
+          
+          .container {
+              max-width: 1200px;
+              margin: 0 auto;
+
+              padding: 20px;
+              display: flex;
+              flex-wrap: wrap;
+              justify-content: space-between;
+          }
+          .tool {
+              width: 30%;
+              background-color: white;
+              border-radius: 5px;
+              box-shadow: 0px 5px 10px rgba(0,0,0,0.1);
+              margin-bottom: 20px;
+              padding: 20px;
+              text-align: center;
+              transition: transform 0.3s ease-in-out;
+          }
+          .tool:hover {
+              transform: translateY(-10px);
+              
+          }
+          .tool img {
+              width: 100%;
+              border-radius: 5px;
+              margin-bottom: 10px;
+          }
+          .tool h2 {
+              margin: 0;
+              margin-bottom: 5px;
+              color: #333;
+          }
+          .tool p {
+              margin: 0;
+              color: #666;
+          }
+</style>
+<body>
+
+  <header id="header">
+    <nav>
+      <div>
+        <!--Menu -->
+        <ul>
+          <li id="menu">
+            <span
+              ><button class="btn">
+                <span class="icon">
+                  <svg viewBox="0 0 175 80" width="40" height="40">
+                    <rect
+                      width="80"
+                      height="15"
+                      fill="#f0f0f0"
+                      rx="10"
+                    ></rect>
+                    <rect
+                      y="30"
+                      width="80"
+                      height="15"
+                      fill="#f0f0f0"
+                      rx="10"
+                    ></rect>
+                    <rect
+                      y="60"
+                      width="80"
+                      height="15"
+                      fill="#f0f0f0"
+                      rx="10"
+                    ></rect>
+                  </svg>
+                </span>
+                <span class="text">MENU</span>
+              </button></span
+            >
+            <ul id="dropDownMenu">
+              <span
+                ><li><a href="#">Videos</a></li></span
+              >
+              <span
+                ><li><a href="#">Recommend</a></li></span
+              >
+              <span
+                ><li><a href="#">Cooking tools</a></li></span
+              >
+              <span
+                ><li><a href="#">Facts</a></li></span
+              >
+              <span
+                ><li><a href="#">Alternatives</a></li></span
+              >
+            </ul>
+          </li>
+        </ul>
+      </div>
+        <div id="navBar">
+        <ul id="links">
+          <li><a id="active" href="#">Home</a></li>
+          <li><a href="#">Recipes</a></li>
+          <li><a href="#">Favourites</a></li>
+          <li><a href="#">Meal History</a></li>
+          <li><a id="signin-btn" href="login.html">Sign in</a></li>
+        </ul>
+      </div>
+
+      <div id="headerLogo"> <!--Logo / Theme-->
+        <h1 id="logo"><span>Cooking</span> Corner</h1>
+        <!--Dark/Light Mode -->
+        <label class="switch">
+          <input id="themeToggle" type="checkbox" />
+          <span class="slider"></span>
+        </label>
+      </div>
+    </nav>
+  </header>
+	  
+	<input type="text" id="searchText" class="button" placeholder="Search..." onkeypress="handleKeyPress(event)">
+<!-- <button onclick="searchAndHighlight()"></button> -->
+	<h1 id ="adam"> Cooking Tools </h1>
+	<div class="container">
+		<div class="tool">
+			<img src="knife.jpeg" alt="Chef Knife">
+			<h2>Chef Knife</h2>
+			<p>A must-have tool for every kitchen.</p>
+		</div>
+		<div class="tool">
+			<img src="Cutting board.jpeg" alt="Cutting Board">
+			<h2>Cutting Board</h2>
+			<p>A durable and safe surface for chopping and cutting.</p>
+		</div>
+		<div class="tool">
+			<img src="frying pan.jpeg" alt="Frying Pan">
+			<h2>Frying Pan</h2>
+			<p>A versatile tool for cooking a variety of dishes.</p>
+		</div>
+    <div class="tool">
+			<img src="ladle.jpeg" alt="Ladle">
+			<h2>Ladle</h2>
+			<p>It's a tool primarily used for serving and transferring liquids, such as soups and sauces.</p>
+		</div>
+		<div class="tool">
+			<img src="saucepan.jpeg" alt="Saucepan"> 
+			<h2>Saucepan</h2>
+			<p>It is used for cooking liquidy foods, like chili or soup.</p>
+		</div>
+    <div class="tool">
+			<img src="mircoplanee.jpeg" alt="MircoPlane"> 
+			<h2>MircoPlane</h2>
+			<p>It's a tool for finely grating or zesting a variety of foods.</p>
+		</div>
+    <div style="height: 70px;">
+    </div>
+<footer>
+      <div id="footerInfo">
+        <h1><span>Cooking</span> Corner</h1>
+      </div>
+
+      <div>
+        <h5>Company</h5>
+        <a>Terms Of Use</a>
+        <a>Contact Us</a>
+        <a>Privacy Policy</a>
+      </div>
+
+      <div>
+        <h5>Follow Us</h5>
+        <a>Facebook</a>
+        <a>Twitter</a>
+        <a>Instagram</a>
+        <a>LinkedIn</a>
+      </div>
+</footer>
+    
+<script>
+  // Function to search and highlight text
+  function searchAndHighlight() {
+    // Clear previous highlights
+    var oldHighlights = document.querySelectorAll('.highlight');
+    oldHighlights.forEach(function(node) {
+      node.outerHTML = node.innerHTML; // Replace the highlight wrapper with its content only
+    });
+  
+    // Get the search text
+    var searchText = document.getElementById('searchText').value;
+    if (searchText) {
+      // Create a regular expression for whole words only, escaping special characters
+      var regExp = new RegExp('\\b' + searchText.replace(/[-\/\\^$*+?.()|[\]{}]/g, '\\$&') + '\\b', 'gi');
+      var firstMatch = null; // Variable to store the first match element
+  
+      // Recursive function to search and highlight text nodes
+      function searchNodes(node) {
+        if (node.nodeType === 3) { // Text node
+          var match = node.nodeValue.match(regExp);
+          if (match) {
+            var span = document.createElement('span');
+            span.className = 'highlight';
+            span.innerHTML = node.nodeValue.replace(regExp, '<span class="highlight">$&</span>');
+  
+            // Replace the text node with the new span element
+            node.parentNode.replaceChild(span, node);
+  
+            // If firstMatch is null, set it to the first highlighted element
+            if (!firstMatch) {
+              firstMatch = span.querySelector('.highlight');
+            }
+          }
+        } else if (node.nodeType === 1 && node.nodeName !== 'SCRIPT' && node.nodeName !== 'STYLE') { // Element node, ignore SCRIPT/STYLE
+          Array.from(node.childNodes).forEach(searchNodes);
+        }
+      }
+  
+      // Start the search from the body of the page
+      searchNodes(document.body);
+  
+      // Scroll to the first match
+      if (firstMatch) {
+        firstMatch.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      } else {
+        alert('No matches found.');
+      }
+    }
+  }
+  
+  // Function to handle the Enter key press
+  function handleKeyPress(event) {
+    var key = event.key || event.keyCode;
+    if (key === 'Enter' || key === 13) {
+      searchAndHighlight(); // Call the search function
+    }
+  }
+  </script>
+    <script src="script.js"></script>
+	</body>
+  </html>

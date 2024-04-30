@@ -1,0 +1,307 @@
+<!-- Name: ديفيد شحاته داود شحاته ID: 20230196 --> 
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width-device-width, intial-scale=1.0" />
+    <title> Dishes History </title>
+    <link id="theme" rel="stylesheet" href="theme.css" type="text/CSS" />
+  </head>
+  <style>
+    #david {
+  font-size: 2.5rem;
+  width: 100%;
+  color: #5d0af7; /* Orange color */
+  text-align: center;
+  margin: 90px auto; /* Increased space around the heading */
+  border: 4px solid #333; /* Enlarged border */
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Enhanced shadow for depth */
+  background-image: linear-gradient(to right, #b9e2fb, #60c0fb); /* Gradient background */
+  animation: fadeIn 1s ease-in-out; /* Fade-in animation */
+}
+
+/* Keyframes for fade-in animation */
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
+}
+
+/* Subtle pulsing effect */
+@keyframes pulse {
+  0% {
+      transform: scale(1);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  }
+  50% {
+      transform: scale(1.02);
+      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+  }
+  100% {
+      transform: scale(1);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  }
+}
+
+#david:hover {
+  animation: pulse 1.5s infinite;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 100px;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+.dish {
+  background-color: #ffffff;
+  background-image: linear-gradient(to right, #87CEEB, #FFDAB9); /* Gradient background */
+  border-radius: 10px;
+  margin-bottom: 30px;
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.history {
+  display: none;
+  padding: 10px;
+}
+
+button {
+  background-color: #008cba;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #005f73;
+}
+
+img {
+  float: right;
+  max-width: 200px;
+  height: auto;
+  margin-left: 20px;
+  transition: transform 0.3s ease; 
+}
+img:hover{
+
+transform: scale(2);
+
+}
+  </style>
+  <body>
+    <header id="header">
+      <nav>
+        <div>
+          <!--Menu -->
+          <ul>
+            <li id="menu">
+              <span
+                ><button class="btn">
+                  <span class="icon">
+                    <svg viewBox="0 0 175 80" width="40" height="40">
+                      <rect
+                        width="80"
+                        height="15"
+                        fill="#f0f0f0"
+                        rx="10"
+                      ></rect>
+                      <rect
+                        y="30"
+                        width="80"
+                        height="15"
+                        fill="#f0f0f0"
+                        rx="10"
+                      ></rect>
+                      <rect
+                        y="60"
+                        width="80"
+                        height="15"
+                        fill="#f0f0f0"
+                        rx="10"
+                      ></rect>
+                    </svg>
+                  </span>
+                  <span class="text">MENU</span>
+                </button></span
+              >
+              <ul id="dropDownMenu">
+                <span
+                  ><li><a href="#">Videos</a></li></span
+                >
+                <span
+                  ><li><a href="#">Recommend</a></li></span
+                >
+                <span
+                  ><li><a href="#">Cooking tools</a></li></span
+                >
+                <span
+                  ><li><a href="#">Facts</a></li></span
+                >
+                <span
+                  ><li><a href="#">Alternatives</a></li></span
+                >
+              </ul>
+            </li>
+          </ul>
+        </div>
+          <div id="navBar">
+          <ul id="links">
+            <li><a id="active" href="#">Home</a></li>
+            <li><a href="#">Recipes</a></li>
+            <li><a href="#">Favourites</a></li>
+            <li><a href="#">Meal History</a></li>
+            <li><a id="signin-btn" href="login.html">Sign in</a></li>
+          </ul>
+        </div>
+
+        <div id="headerLogo"> <!--Logo / Theme-->
+          <h1 id="logo"><span>Cooking</span> Corner</h1>
+          <!--Dark/Light Mode -->
+          <label class="switch">
+            <input id="themeToggle" type="checkbox" />
+            <span class="slider"></span>
+          </label>
+        </div>
+      </nav>
+    </header>
+<div class="container">
+    <h1 id="david">History of Famous Food Dishes</h1>
+
+    <!-- Pizza Section -->
+    <div class="dish" >
+        <h2>Pizza</h2>
+        <p><button onclick="toggleHistory('pizza-history')">Show History</button></p>
+        <div id="pizza-history" class="history">
+            <img src="istockphoto-910195988-612x612.jpg" alt="Pizza">
+            <p>Pizza was originally a dish of the poor in Naples, Italy. It became famous after the visit of Queen Margherita who enjoyed a pizza that resembled the colors of the Italian flag: red (tomato), white (mozzarella), and green (basil).</p>
+            <p>For listening:</p>
+            <audio controls>
+                <source src="Pizza.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+    </div>
+
+    <!-- Sushi Section -->
+    <div class="dish">
+        <h2>Sushi</h2>
+        <p><button onclick="toggleHistory('sushi-history')">Show History</button></p>
+        <div id="sushi-history" class="history">
+          <img src="Sushi.webp" alt="Sushi">
+            <p>Sushi originated in Southeast Asia and traveled through China before becoming a culinary staple in Japan. 
+              It started as a method of preserving fish in fermented rice and evolved 
+              into the modern delicacies we enjoy today.</p>
+              <p>For listening:</p>
+              <audio controls>
+                <source src="Sushi.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+    </div>
+
+    <!-- Chocolate Section -->
+    <div class="dish">
+        <h2>Chocolate</h2>
+        <p><button onclick="toggleHistory('chocolate-history')">Show History</button></p>
+        <div id="chocolate-history" class="history">
+            <img src="chocolate.webp" alt="Chocolate">
+            <p>Chocolate has ancient origins, with the Aztecs brewing a bitter beverage called xocolātl from cacao beans. The Spanish brought cacao beans to Europe, where sugar transformed bitter chocolate into a beloved treat.</p>
+            <p>For listening:</p>
+              <audio controls>
+                <source src="Chocolate.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+    </div>
+
+    <!-- Curry Section -->
+    <div class="dish">
+        <h2>Curry</h2>
+        <p><button onclick="toggleHistory('curry-history')">Show History</button></p>
+        <div id="curry-history" class="history">
+            <img src="Curry.webp" alt="Curry">
+            <p>Curry's rich spice trade origins in India led to its worldwide popularity. Each region adapted curry with local ingredients, making it a global comfort food.</p>
+            <p>For listening:</p>
+              <audio controls>
+                <source src="curry.mp3" type="audio/mpeg">
+            </audio>
+        </div>
+    </div>
+    <div class="dish">
+        <h2>Indomie</h2>
+        <p><button onclick="toggleHistory('indomie-history')">Show History</button></p>
+        <div id="indomie-history" class="history">
+            <img src="indomie-mi-goreng-special_detail_094906814.webp" alt="Indomie">
+            <p>Indomie is a popular brand of instant noodles produced by Indofood in Indonesia and widely enjoyed in Nigeria and other African countries.</p>
+            <p>For listening:</p>
+              <audio controls>
+                <source src="Indomie.mp3" type="audio/mpeg">
+            </audio>
+        </div>
+    </div>
+    <div class="dish">
+        <h2>Fried Chickens</h2>
+        <p><button onclick="toggleHistory('friedchickens-history')">Show History</button></p>
+        <div id="friedchickens-history" class="history">
+            <img src="fried chickens.webp" alt="fried chickens">
+            <p>Fried chicken originated from Scottish and West African culinary traditions, combining Scottish frying techniques with African seasonings and spices.</p>
+            <p>For listening:</p>
+              <audio controls>
+                <source src="fried chickens.mp3" type="audio/mpeg">
+            </audio>
+        </div>
+    </div>
+</div>
+
+<script>
+    function toggleHistory(id) {
+        var history = document.getElementById(id);
+        if (history.style.display === 'none') {
+            history.style.display = 'block';
+        } else {
+            history.style.display = 'none';
+        }
+    }
+</script>
+
+    <div style="height: 70px;">
+    </div>
+    <footer>
+      <div id="footerInfo">
+        <h1><span>Cooking</span> Corner</h1>
+      </div>
+
+      <div>
+        <h5>Company</h5>
+        <a>Terms Of Use</a>
+        <a>Contact Us</a>
+        <a>Privacy Policy</a>
+      </div>
+
+      <div>
+        <h5>Follow Us</h5>
+        <a>Facebook</a>
+        <a>Twitter</a>
+        <a>Instagram</a>
+        <a>LinkedIn</a>
+      </div>
+    </footer>
+    <script  src="script.js"> </script>
+  </body>
+</html>
