@@ -1,0 +1,102 @@
+*{
+    margin:0;
+    padding:0;}
+    body{
+        background-color:white;
+    }
+    .page{
+        width:100%;
+        height:auto;
+        padding:0 0 80 0 ;
+    }
+    .container{
+        width: 100%;
+    margin:  auto;
+    height:auto;
+    }
+    .page .container .search{
+        display: flex;
+        padding:30px 0px ;
+        padding-left:60px;
+        padding-top:80px;
+        height:60px;
+        
+
+    }
+    h2{
+        padding-left:45px
+    }
+    .container .search h1{
+        letter-spacing:3px;
+        display:inline-block;
+        border-bottom: 2px solid red;
+        padding-bottom: 10px;
+        padding-right:7px;
+    }
+    .container .search input{
+        width:60%;
+        padding:5px 16px;
+        font-size:20px;
+        letter-spacing:3px;
+        outline:none;
+        
+        
+    }
+    .container .search input:hover{
+        border: 60px;}
+        
+    .container .search input::placeholder{
+        color:red;
+        font-weight:500;
+    }
+    .recipes_list .recipe img{
+        width: 250px;
+        height:300px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    
+    .container .recipes_list  {
+        display:flex;
+        justify-content: space-around;
+        flex-wrap:wrap;
+        padding-left:px;
+        
+    }
+    .container .recipes_list .recipe{
+        margin-top:30px;
+        transition: all 0.3s ease;
+        padding-bottom:30px;
+    }
+    .container .recipes_list .recipe img:hover{
+        transition: all 0.5s ease;
+        box-shadow:2px 2px 20px black;
+        z-index:2;
+        border-radius: 20%;
+        
+    }
+    .container .recipes_list .recipe h3{
+        padding-top:5px;
+        letter-spacing:2px;
+        font-size:22px;
+        font-weight:40;
+        align-items: center;
+        padding-left: 17px;
+        
+    }
+    .container .recipes_list .recipe h3:hover{
+        color:red;}
+        
+        @media (max-width: 100%) {
+            .container {
+                width: 100%;
+            }}
+            @media (min-width: 769px) {
+                .container {
+                    width: 100%;
+                }}
+                img {
+                    max-width: 100%;
+                    height: auto;
+                }

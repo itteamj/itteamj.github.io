@@ -1,0 +1,139 @@
+
+.banner-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    
+  }
+  .banner-container .banner{
+    background: white;
+    border-radius: 5px;
+  
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+   box-shadow: 0 5px  10px #0005 ;
+   overflow: hidden;
+  }
+  
+  .box2 {
+    border: 2px soild #0005;
+    background-color: #edc064;
+  }
+  
+  
+  /*theme*/
+  
+   
+    /*theme*/
+  .image{
+  width:500px;
+  height: 100px;
+  animation:demo 2s ease-in infinite, trans 2s ease-out infinite;
+  border-radius:40px;
+  position: absolute;
+  display: inline-block;
+  }
+  @keyframes trans 
+  {
+   80% {transform:scale(1);top: 200px; }
+   100% {transform: scale(1.1);top: 80px; }
+   
+  }  
+  .container {
+    position: relative;
+    width: 70%;
+    max-width: 400px;
+    margin: 200px;
+  }
+  
+  .container img {
+    width: 100%;
+    height: auto;
+  }
+  .container .btn2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    color: black;
+    font-size: 16px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.container .btn2:hover {
+  background-color: #edc064 ;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+img {/*format*/
+  border-radius: 20%;
+  border: 1px solid #ddd;
+  border-radius: 300px;
+  padding: 5px;
+display: inline-block;
+}
+
+.box2 {
+background-color: #d4b734;
+width: 600px;
+display: inline-block;
+}
+@import url('https://fonts.googleapis.com/css2?family-Poppins');
+
+
+.row {
+    display: flex;
+  }
+  
+  /* Left column (menu) */
+  .left {
+    flex: 35%;
+    padding: 15px 0;
+  }
+  
+  .left h2 {
+    padding-left: 8px;
+  }
+  
+  /* Right column (page content) */
+  .right {
+    flex: 65%;
+    padding: 15px;
+  }
+  
+  /* Style the search box */
+  #mySearch {
+    width: 100%;
+    font-size: 18px;
+    padding: 11px;
+    border: 1px solid #ddd;
+  }
+  
+  /* Style the navigation menu inside the left column */
+  #myMenu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  #myMenu li a {
+    padding: 12px;
+    text-decoration: none;
+    color: black;
+    display: block
+  }
+  
+  #myMenu li a:hover {
+    background-color: #eee;
+  }

@@ -1,0 +1,219 @@
+/*jomana mahmoud elsaghier ahmed
+  20230147*/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh; 
+  background-image: url("images\back jomana.jpg");
+  background-size: cover; 
+  background-repeat: no-repeat;
+  background-position: center center;
+  color: white;
+  font-family: "sans-serif";
+}
+.form {
+  position: relative;
+  margin-bottom: 40px;
+  top: -300px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  border-radius: 0.75rem;
+  background-color: #fff;
+  color: rgb(97 97 97);
+  box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.05);
+  width: 22rem;
+  background-clip: border-box;
+  z-index: 0;
+}
+
+.header1 {
+  position: relative;
+  background-clip: border-box;
+  background-color: #ff4500;
+  margin: 10px;
+  border-radius: 0.75rem;
+  transition: 0.6s;
+  overflow: hidden;
+  color: #fff;
+  box-shadow: 0 0 #0000, 0 0 #0000, 0 0 #0000, 0 0 #0000,
+    rgba(33, 150, 243, 0.4);
+  height: 7rem;
+  letter-spacing: 0;
+  line-height: 1.375;
+  font-weight: 600;
+  font-size: 1.9rem;
+  font-family: sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header1:hover {
+  background-color: black;
+}
+
+.inputs {
+  padding: 1.5rem;
+  gap: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  min-width: 200px;
+  width: 100%;
+  height: 2.75rem;
+  position: relative;
+}
+
+.input {
+  border: 1px solid rgba(128, 128, 128, 0.61);
+  outline: 0;
+  color: rgb(69 90 100);
+  font-weight: 400;
+  font-size: 0.9rem;
+  line-height: 1.25rem;
+  padding: 0.75rem;
+  background-color: transparent;
+  border-radius: 0.375rem;
+  width: 100%;
+  height: 100%;
+}
+
+.input:focus {
+  border: 1px solid #ff4500;
+}
+
+.checkbox-container {
+  margin-left: -0.625rem;
+  display: inline-flex;
+  align-items: center;
+}
+
+.checkbox {
+  position: relative;
+  overflow: hidden;
+  padding: 0.55rem;
+  border-radius: 999px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.027);
+  height: 35px;
+  width: 35px;
+}
+
+.checkbox input {
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+
+.checkbox-text {
+  cursor: pointer;
+}
+
+.signin {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  text-align: center;
+  padding: 0.75rem 1.5rem;
+  background-color: #ff4500;
+  border-radius: 0.5rem;
+  width: 100%;
+  height: 45px;
+  transition: 0.3s;
+  outline: 0;
+  border: 0;
+  color: #fff;
+}
+.signin:hover {
+  background-color: black;
+  box-shadow: 0 0 0 5px #1e20215f;
+  color: #fff;
+}
+
+.signup-link {
+  line-height: 1.5;
+  font-weight: 300;
+  font-size: 0.875rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.signup-link a,
+.forget {
+  line-height: 1.5;
+  font-weight: 700;
+  font-size: 0.875rem;
+  margin-left: 0.25rem;
+  color: #ff4500;
+}
+
+.forget {
+  text-align: right;
+  font-weight: 600;
+}
+.message-box {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.message-box #messageText {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: #333;
+}
+
+.message-box #closeBtn {
+  display: block;
+  padding: 5px 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.message-box #closeBtn:hover {
+  background-color: #0056b3;
+}
+
+.ad-banner {
+  position: absolute;
+  top: calc(100% + 20px); /* Position the ad banner below the form with a 20px gap */
+  right: 400px; 
+}
+
+.ad-banner img{
+  width: 40vw;
+  height: 200px;
+}
+.ad-banner iframe {
+  height: 250px; 
+  width: 100%;
+}

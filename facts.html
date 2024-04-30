@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <link rel="stylesheet" href=" https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"> 
+    <title>Cooking Corner</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width-device-width, initial-scale=1.0" />
+    <link  href="" rel="stylesheet"  id ="theme" type="text/CSS"/>
+    <script src="js/main.js"> 
+    function search() {
+    // Declare variables
+    var input, filter, cards, cardText, i;
+    input = document.getElementById('find');
+    filter = input.value.toUpperCase();
+    cards = document.getElementsByClassName('card');
+
+    // Loop through all cards
+    for (i = 0; i < cards.length; i++) {
+        cardText = cards[i].querySelector('.text').textContent || cards[i].querySelector('.text').innerText;
+        if (cardText.toUpperCase().indexOf(filter) > -1) {
+            cards[i].style.display = '';
+        } else {
+            cards[i].style.display = 'none';
+        }
+    }
+}
+document.addEventListener('DOMContentLoaded', function() {
+    var themeToggle = document.getElementById('themeToggle');
+    var themeLink = document.getElementById('theme');
+    var selectedTheme = localStorage.getItem('selectedTheme') || 'theme1.css';
+    themeLink.setAttribute('href', selectedTheme);
+    function switchTheme() {
+        var newTheme = (theme1Link.getAttribute('href') === 'theme1.css') ? 'theme2.css' : 'theme1.css';
+        themeLink.setAttribute('href', newTheme);
+        localStorage.setItem('selectedTheme', newTheme);
+    }
+    themeToggle.addEventListener('change', function() {
+        switchTheme();
+    });
+  });
+    </script>
+    <title>Document</title>
+</head>
+<body style="background-color: bisque;"> 
+  <header id="header">
+    <nav>
+        <div> <!--Menu -->
+            <ul>
+                <li id="menu">
+                  <span><button class="btn">
+                        <span class="icon">
+                            <svg viewBox="0 0 175 80" width= "40" height="40">
+                                <rect width="80" height="15" fill="#f0f0f0" rx="10"></rect>
+                                <rect y="30" width="80" height="15" fill="#f0f0f0" rx="10"></rect>
+                                <rect y="60" width="80" height="15" fill="#f0f0f0" rx="10"></rect>
+                            </svg>
+                        </span>
+                        <span class="text">MENU</span>
+                    </button></span>
+                  <ul id="dropDownMenu"> 
+                    <span><li><a href="#">Videos</a></li></span>
+                    <span><li><a href="#">Recommend</a></li></span>
+                    <span><li><a href="#">Cooking tools</a></li></span> 
+                    <span><li><a href="#">Facts</a></li></span>              
+                    <span><li><a href="#">Alternatives</a></li></span>
+                   </ul>
+                </li>
+            </ul>
+        </div>
+
+        <div id="navBar">
+            <ul id="links">
+                <li><a id="active" href="#">Home</a></li>
+                <li><a href="#">Recipes</a></li>
+                <li><a href="#">Favourites</a></li>
+                <li><a href="#">Meal History</a></li>
+                <li><a id="signin-btn" href="login.html">Sign in</a></li>
+
+            </ul>
+        </div>
+
+        <div id="headerLogo"> <!--Logo / Theme-->
+            <h1 id="logo"><span>Cooking</span> Corner</h1>
+             <!--Dark/Light Mode -->
+            <label class="switch">
+                <input id="themeToggle" type="checkbox">
+                <span class="slider"></span>
+            </label>
+        </div>
+        
+    </nav>
+</header>
+<div style="height: 55px;">
+
+
+</div><p class="header"> food facts  </p>
+<div class=" container">   
+ <div class="search">
+   <h3 style="font-style: oblique ; "> Gannat Saber Ali <p style="font-style: oblique;"> ID: 20230150</p></h3>
+   <input type="text" id="find" placeholder=" search .." onkeyup=" search ()">
+   <label for="find" class="fa fa search"> </label>
+  </div>
+
+ <div class="card">
+    <div class=" image">
+
+        <img src="imges/Cara Cara Oranges Prove It’s What’s on the Inside That Counts.jpg">
+    </div>
+    <div class=" text ">
+        <table>
+            <tr>
+                <th> cal </th>
+                <th> protiens </th>
+                <th> fat </th>
+               <th> carbohydrate </th>
+             </tr>
+             <tr> 
+                <td> 62 cal </td>
+                <td> 1.2 g </td>
+                <td> 0.2 g </td>
+                <td> 12 g  </td>
+             </tr>
+           </table>
+           <div>
+            <p class="title">  nutritional information : </p>
+            <p class=" sec-title"> Oranges are rich in vitamins, minerals, and antioxidants  </p>
+            <div class=" thre-title">
+               <P>  like : </P>
+            <p> Phosphorous </p>
+               <P> vatamin c </P>
+               <p> potassium </p>
+            </div>
+              </div>
+       </div>  
+        <div class=" image">
+            <img src="imges/download (9).jpg">
+        </div>
+       </div>
+        <div class=" text ">
+            <table>
+                <tr>
+                    <th> cal </th>
+                    <th> protiens </th>
+                    <th> fat </th>
+                   <th> carbohydrate </th>
+                 </tr>
+                 <tr> 
+                    <td> 32cal </td>
+                    <td> 0.7g </td>
+                    <td> 0.3 g </td>
+                    <td> 7.7 g  </td>
+                 </tr>
+               </table>
+               <div>
+                <p class="title">  nutritional information : </p>
+                <p class=" sec-title"> Strawberries contain more vitamin C than oranges  </p>
+                <div class=" thre-title">
+                   <P>  like : </P>
+                <p>  folic acid </p>
+                   <P> fiber </P>
+                   <p> potassium </p>
+                </div>
+                  </div>
+           </div>  
+           <div class="card" >
+           <div class=" image">
+            <img src="imges/download (13).jpg" >
+        </div>
+       </div>
+        <div class=" text ">
+            <table>
+                <tr>
+                    <th> cal </th>
+                    <th> protiens </th>
+                    <th> fat </th>
+                   <th> carbohydrate </th>
+                 </tr>
+                 <tr> 
+                    <td> 104 cal</td>
+                    <td> 0.5g </td>
+                    <td> 0.3 g </td>
+                    <td> 14 g  </td>
+                 </tr>
+               </table>
+               <div>
+                <p class="title">  nutritional information : </p>
+                <p class=" sec-title">  Apples contain antioxidants, vitamins, dietary fiber</p>
+                <div class=" thre-title">
+                   <P>  like : </P>
+                <p>  vatamin c </p>
+                   <P> fiber </P>
+                   <p> iron </p>
+                </div>
+                  </div>
+           </div>  
+           
+       <div class=" image">
+        <img src="imges/download (1).jpg" >
+    </div>
+           </div>    
+    <div class=" text ">
+        <table><tr>
+            <th> cal </th>
+            <th> protiens </th>
+            <th> fat </th>
+           <th> carbohydrate </th>
+         </tr>
+         <tr> 
+            <td> 18 cal </td>
+            <td> 0.5 % </td>
+            <td> 0.5 % </td>
+            <td> 4 %  </td>
+         </tr>
+       </table>
+       <div>
+     <p class="title">  nutritional information : </p>
+     <p class=" sec-title">  tomatoes are third most popular vegtables ! </p>
+     <div class=" thre-title">
+        <P>  they are a good source of : </P>
+     <p> vatamin A </p>
+        <P> vatamin c </P>
+        <p> potassium </p>
+     </div>
+       </div>
+</div>
+
+
+<div class=" image">
+    <img src="imges/Planting Onion Sets In The Spring - 3 Simple Secrets To Big Success!.jpg" >
+</div>
+</div>
+<div class=" text ">     
+    <table > 
+        <tr>
+           <th> cal </th>
+           <th> protiens </th>
+           <th> fat </th>
+          <th> carbohydrate </th>
+        </tr>
+        <tr> 
+           <td> 40 cal </td>
+           <td>  2 g </td>
+           <td> 0,1 g </td>
+           <td> 9 g  </td>
+        </tr>
+     </table>
+     
+        <p class="title">  nutritional information : </p>
+        <p class=" sec-title">    Onions contain decent amounts of several vitamins and minerals  </p>
+        <div class=" thre-title">
+            <P>  including : </P>
+            <p> vatamin B6 </p>
+               <P> vatamin c </P>
+               <p> Folate (B9) </p
+            
+               </div>
+ </div>
+ </div>
+
+ <div class=" image">
+    <img src="imges/Best Roasted Broccoli Recipe - A Beautiful Plate.jpg" >
+</div>
+</div>
+<div class=" text ">
+    <table > 
+        <tr>
+           <th> cal </th>
+           <th> protiens </th>
+           <th>  fat </th>
+          <th> carbohydrate </th>
+          
+        </tr>
+        <tr> 
+           <td> 40 cal </td>
+           <td>  2.6 g </td>
+           <td> 0,3 g </td>
+           <td> 7 g  </td>
+        </tr>
+     </table>
+     <div>
+        <p class="title">  nutritional information : </p>
+        <p class=" sec-title">    Broccoli is packed with vitamins and minerals and has many health benefits   </p>
+        <div class=" thre-title">
+            <P>  like : </P>
+    <p> Calcium</p>
+       <P> Phosphorous </P>
+       <p> Zinc </p>
+        </div>
+           </div>
+                </div>
+    
+               </div>
+             </div>
+             <footer id="footer"> <!--Footer -->
+               <div id="footerInfo">
+                 <h1><span>Cooking</span> Corner</h1>
+               </div>
+         
+               <div>
+                 <a href="#">feedback<a>
+                 <a>Terms Of Use</a>
+                 <a>Contact Us</a>
+                 <a>Privacy Policy</a>
+               </div>
+         
+               <div>
+                 <h5>Follow Us</h5>
+                 <a>Facebook</a>
+                 <a>Twitter</a>
+                 <a>Instagram</a>
+                 <a>LinkedIn</a>        
+               </div>
+           </footer>
+           <script src="js/main.js"></script>
+<script src="js/main.js"> 
+
+function search() {
+// Declare variables
+var input, filter, cards, cardText, i;
+input = document.getElementById('find');
+filter = input.value.toUpperCase();
+cards = document.getElementsByClassName('card');
+// Loop through all cards
+for (i = 0; i < cards.length; i++) {
+        cardText = cards[i].querySelector('.text').textContent || cards[i].querySelector('.text').innerText;
+        if (cardText.toUpperCase().indexOf(filter) > -1) {
+            cards[i].style.display = '';
+        } else {
+            cards[i].style.display = 'none';
+        }
+    }
+}
+document.addEventListener('DOMContentLoaded', function() {
+    var themeToggle = document.getElementById('themeToggle');
+    var themeLink = document.getElementById('theme');
+    var selectedTheme = localStorage.getItem('selectedTheme') || 'theme1.css';
+    themeLink.setAttribute('href', selectedTheme);
+    function switchTheme() {
+        var newTheme = (theme1Link.getAttribute('href') === 'theme1.css') ? 'theme2.css' : 'theme1.css';
+        themeLink.setAttribute('href', newTheme);
+        localStorage.setItem('selectedTheme', newTheme);
+    }
+    themeToggle.addEventListener('change', function() {
+        switchTheme();
+    });
+  });
+
+</script>
+</body>
+</html>

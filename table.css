@@ -1,0 +1,95 @@
+p:hover{
+    background-color:red;
+ }
+body{
+ background-color:#D2B48C;
+}
+ .it{
+     font-weight: 200px;
+     font-size: 40px;
+     text-decoration: solid;
+ }
+ .te{
+     color:brown;
+     font-size: 40px;
+     font-style: inherit ;
+     text-align: center;
+     text-decoration:wavy ;
+ }
+ p{
+     color: rgb(173, 25, 25);
+     font-size: 30px;
+     font-style:italic;
+     text-align: center;
+     text-decoration:underline;
+
+ } 
+ p:hover{
+     color:white;
+ }
+
+ td{
+     background:beige;
+     text-align: center;
+     border: 0px solid rgb(141, 135, 128);
+     padding: 30px;
+     color:rgb(223, 223, 216);
+     border-radius: 10px;
+ }
+ tr{
+     background:rgb(179, 155, 155);
+ }
+ th{
+     background:bisque;
+     text-align: center;
+    border-radius: 0px;
+ }
+ table{
+     width: 80%;
+     border-spacing: 5px;
+     border-collapse:separate;
+     margin:auto;
+ 
+ }
+ img{
+     width: 250px;
+     height: 250px;
+     display: block;
+     margin-bottom: 10px;
+     background-size: 20px;
+ }
+
+
+
+#myButton {
+ background-color:brown;
+ color: white;
+ padding: 10px 20px;
+ font-size: 30px;
+ border: 20px;
+ border-radius: 30px;
+ cursor: pointer;
+ transition: background-color 0.3s;
+ position: absolute;
+ top: 100px ;
+ right: 20px;
+
+}
+
+#myButton:hover {
+ background-color:goldenrod;
+}
+.message{
+position: absolute;
+top:200px ;
+right:20px ;
+border: 1px solid #cccccc;
+border-radius: 10px;
+padding: 10px 20px;
+font-size: 26px;
+background-color:beige;
+box-shadow: 0 0 10px yellow;
+word-spacing: 1px;
+letter-spacing: 2px;
+color:brown;
+}

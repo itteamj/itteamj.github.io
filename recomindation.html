@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="reco.css">
+        <link rel="stylesheet" href="css/lightbox.min.css">
+        <link rel="stylesheet" href=" https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="js/lightbox-plus-jquery.min.js">
+
+
+ 
+  <title>Cooking Corner</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width-device-width, initial-scale=1.0" />
+    <link id="theme" href="reco.css" rel="stylesheet" type="text/CSS"/>
+      </head>
+      <header id="header">
+        <nav>
+            <div> <!--Menu -->
+                <ul>
+                    <li id="menu">
+                      <span><button class="btn">
+                            <span class="icon">
+                                <svg viewBox="0 0 175 80" width= "40" height="40">
+                                    <rect width="80" height="15" fill="#f0f0f0" rx="10"></rect>
+                                    <rect y="30" width="80" height="15" fill="#f0f0f0" rx="10"></rect>
+                                    <rect y="60" width="80" height="15" fill="#f0f0f0" rx="10"></rect>
+                                </svg>
+                            </span>
+                            <span class="text">MENU</span>
+                        </button></span>
+                      <ul id="dropDownMenu"> 
+                        <span><li><a href="#">Videos</a></li></span>
+                        <span><li><a href="#">Recommend</a></li></span>
+                        <span><li><a href="#">Cooking tools</a></li></span> 
+                        <span><li><a href="#">Facts</a></li></span>              
+                        <span><li><a href="#">Alternatives</a></li></span>
+                       </ul>
+                    </li>
+                </ul>
+            </div>
+
+            <div id="navBar">
+                <ul id="links">
+                    <li><a id="active" href="#">Home</a></li>
+                    <li><a href="#">Recipes</a></li>
+                    <li><a href="#">Favourites</a></li>
+                    <li><a href="#">Meal History</a></li>
+                    <li><a id="signin-btn" href="login.html">Sign in</a></li>
+
+                </ul>
+            </div>
+
+            <div id="headerLogo"> <!--Logo / Theme-->
+                <h1 id="logo"><span>Cooking</span> Corner</h1>
+                 <!--Dark/Light Mode -->
+                <label class="switch">
+                    <input  type="checkbox"id="themeToggle">
+                    <span class="slider"></span>
+                </label>
+            </div>
+            
+        </nav>
+    </header>
+    <div style="height: 77px;">
+
+
+    </div>
+    <body>
+    
+   <button type="button" onclick="welcome()"> recomended recipes</button>
+      <h2 class=" header"> recomended dishes </h2>
+      
+   <div class=" container">
+      <h3 style="font-style: oblique ; "> Gannat Saber Ali <p style="font-style: oblique;"> ID: 20230150</p></h3>
+     <div class=" gallery">
+      <a href="images\55g.jpg" data-lightbox="our recommendations for some dishes " data-title="our recommendations for some dishes " >
+         <img src="images\55g.jpg" alt=" ">
+      </a>
+         <div class=" title">
+            <ul>Honey Mustard Potatoes </ul>
+         </div>
+         <a href="images\22.jpg" data-lightbox="our recommendations for some dishes "  data-title="our recommendations for some dishes">
+         <img src="images\22.jpg" alt="">
+      </a>
+         <div class=" title"><p> lemon Herb Roasted Chicken</p>
+         </div>
+         <a href="imags/American hot deep-pan pizza.jpg" data-lightbox="our recommendations for some dishes "  data-title="our recommendations for some dishes">
+         <img src="images\33g.jpg" alt="">
+      </a>
+         <div class=" title">
+            <p> American hot deep-pan pizza </p>
+         </div>
+         <a href="images\88g.jpg" data-lightbox="our recommendations for some dishes "  data-title="our recommendations for some dishes">
+         <img src="images\88g.jpg" alt="">
+      </a>
+         <div class=" title">
+            <p> Chicken Tikka Masala </p>
+         </div>
+         <a href="imags/Chinese-Style Arrabiata Pasta (Two Ways).jpg" data-lightbox="our recommendations for some dishes "  data-title="our recommendations for some dishes">
+         <img src="images\55g.jpg" alt="">
+      </a>
+         <div class=" title">
+            <p> Chinese-Style Arrabiata Pasta </p>
+         </div>
+         <a href="imags/Creamy Cauliflower Soup.jpg" data-lightbox="our recommendations for some dishes "  data-title="our recommendations for some dishes">
+         <img src="images\66g.jpg" alt="">
+      </a>
+         <div class=" title">
+            <p> Creamy Cauliflower Soup </p>
+         </div>
+         <a href="images\pasta g.jpg" data-lightbox="our recommendations for some dishes "  data-title="our recommendations for some dishes">
+         <img src="images\pasta g.jpg" alt="">
+      </a>
+         <div class=" title">
+            <p> Garlic Butter Chicken and Potatoes Skillet </p>
+         </div>
+         <a href="images\soub g.jpg" data-lightbox="our recommendations for some dishes "  data-title="our recommendations for some dishes">
+         <img src="images\soub g.jpg" alt="">
+      </a>
+         <div class=" title">
+            <p> Creme Fraiche Salmon Pasta </p>
+         </div>
+     </div>
+   </div>
+   <footer id="footer"> <!--Footer -->
+    <div id="footerInfo">
+      <h1><span>Cooking</span> Corner</h1>
+    </div>
+
+    <div>
+      <a href="#">feedback<a>
+      
+    </div>
+
+    <div>
+      <h5>Follow Us</h5>
+      <a>Facebook</a>
+      <a>Twitter</a>
+      <a>Instagram</a>
+      <a>LinkedIn</a>        
+    </div>
+</footer>
+<script src="script.js"></script>
+<script>
+  
+  function welcome() {
+    var confirmation = confirm ("This is a cooking site with many unique recipes ");
+    if(confirmation) {
+    window.open("https://www.justfood.tv")
+    }
+}
+document.addEventListener('DOMContentLoaded', function() {
+    var themeToggle = document.getElementById('themeToggle');
+    var themeLink = document.getElementById('theme');
+    var selectedTheme = localStorage.getItem('selectedTheme') || 'theme1.css';
+    themeLink.setAttribute('href', selectedTheme);
+    function switchTheme() {
+        var newTheme = (theme1Link.getAttribute('href') === 'theme1.css') ? 'theme2.css' : 'theme1.css';
+        themeLink.setAttribute('href', newTheme);
+        localStorage.setItem('selectedTheme', newTheme);
+    }
+    themeToggle.addEventListener('change', function() {
+        switchTheme();
+    });
+  });
+  
+</script>
+<script src="js/lightbox-plus-jquery.min.js"></script>   
+   </body>
+   </html>

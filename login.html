@@ -1,0 +1,162 @@
+<!--jomana mahmoud elsaghier ahmed-->
+<!--20230147-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width-device-width, intial-scale=1.0" />
+    <title>cooking Corner</title>
+    <link rel="stylesheet" href="login.CSS" type="text/CSS" />
+    <link id="theme" rel="stylesheet" href="theme1.css" type="text/CSS" />
+  </head>
+  <body>
+    <header id="header">
+      <nav>
+        <div>
+          <!--Menu -->
+          <ul>
+            <li id="menu">
+              <span
+                ><button class="btn">
+                  <span class="icon">
+                    <svg viewBox="0 0 175 80" width="40" height="40">
+                      <rect
+                        width="80"
+                        height="15"
+                        fill="#f0f0f0"
+                        rx="10"
+                      ></rect>
+                      <rect
+                        y="30"
+                        width="80"
+                        height="15"
+                        fill="#f0f0f0"
+                        rx="10"
+                      ></rect>
+                      <rect
+                        y="60"
+                        width="80"
+                        height="15"
+                        fill="#f0f0f0"
+                        rx="10"
+                      ></rect>
+                    </svg>
+                  </span>
+                  <span class="text">MENU</span>
+                </button></span
+              >
+              <ul id="dropDownMenu">
+                <span
+                  ><li><a href="#">Videos</a></li></span
+                >
+                <span
+                  ><li><a href="#">Recommend</a></li></span
+                >
+                <span
+                  ><li><a href="#">Cooking tools</a></li></span
+                >
+                <span
+                  ><li><a href="#">Facts</a></li></span
+                >
+                <span
+                  ><li><a href="#">Alternatives</a></li></span
+                >
+              </ul>
+            </li>
+          </ul>
+        </div>
+
+        <div id="navBar">
+          <ul id="links">
+            <li><a id="active" href="#">Home</a></li>
+            <li><a href="#">Recipes</a></li>
+            <li><a href="#">Favourites</a></li>
+            <li><a href="#">Meal History</a></li>
+            <li><a id="signin-btn" href="login.html">Sign in</a></li>
+          </ul>
+        </div>
+
+        <div id="headerLogo"> <!--Logo / Theme-->
+          <h1 id="logo"><span>Cooking</span> Corner</h1>
+          <!--Dark/Light Mode -->
+          <label class="switch">
+            <input id="themeToggle" type="checkbox" />
+            <span class="slider"></span>
+          </label>
+        </div>
+      </nav>
+    </header>
+    <div style="height: 300px; margin-top: 200px">
+      <div id="text">
+        <h2 style="color: black">jomana mahmoud elsaghier ahmed<br>20230147</h2>
+      </div>
+      <div id="messageBox" class="message-box">
+        <span id="messageText"></span>
+        <button id="closeBtn">Close</button>
+     </div>       
+    </div>
+      <form class="form" id="loginForm">
+        <div class="header1">Sign In</div>
+        <div class="inputs">
+          <input
+            id="email"
+            placeholder="Email"
+            class="input"
+            type="email"
+            required
+          />
+          <input
+            id="password"
+            placeholder="Password"
+            minlength="4"
+            maxlength="12"
+            class="input"
+            type="password"
+            required
+          />
+          <div class="checkbox-container">
+            <label class="checkbox">
+              <input type="checkbox" id="checkbox" />
+            </label>
+            <label for="checkbox" class="checkbox-text">Remember me</label>
+          </div>
+          <button class="signin" type="submit">Submit</button>
+          <a class="forget" href="password.html" target="_self"
+            >Forget password ?</a
+          >
+          <p class="signup-link">
+            Don't have an account?
+            <a href="register.html" target="_self">Sign up</a>
+          </p>
+        </div>
+      </form></div>
+  <br></br><br></br><br></br>
+    <div class="ad-banner">
+    <a href="https://www.google.com/imgres?q=audi%20ad&imgurl=https%3A%2F%2Fwww.audi.com%2Fcontent%2Fdam%2Fci%2FGuides%2FCommunication_Media%2FAdvertisements%2F02_Andwendungsbeispiele%2Faudi-ci-communication-media-advertisements-example3_V2.png%3Fimwidth%3D2400&imgrefurl=https%3A%2F%2Fwww.audi.com%2Fci%2Fen%2Fguides%2Fcommunication-media%2Fadvertisements.html&docid=1Boh6xDCD7nriM&tbnid=HagH90JnthnvIM&vet=12ahUKEwjB_PqdyeiFAxWS0wIHHYS1Bn0QM3oECGMQAA..i&w=2400&h=1697&hcb=2&ved=2ahUKEwjB_PqdyeiFAxWS0wIHHYS1Bn0QM3oECGMQAA">
+      <img src="images\ad jomana1.jpg" alt="Advertisement"></a>
+  </div>  
+    <footer id="footer">
+      <div id="footerInfo">
+        <h1><span>Cooking</span> Corner</h1>
+      </div>
+
+      <div>
+        <a href="#">feedback<a>
+        <a>Terms Of Use</a>
+        <a>Contact Us</a>
+        <a>Privacy Policy</a>
+      </div>
+
+      <div>
+        <h5>Follow Us</h5>
+        <a>Facebook</a>
+        <a>Twitter</a>
+        <a>Instagram</a>
+        <a>LinkedIn</a>
+      </div>
+    </footer>
+    <script src="login.js"></script>
+   <script src="script.js"></script>
+  </body>
+</html>

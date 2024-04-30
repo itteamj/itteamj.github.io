@@ -1,0 +1,111 @@
+<!--jomana mahmoud elsaghier-->
+<!--20230147-->
+<!DOCTYPE html>
+<html lang= "en">
+  <head>
+    <title>Cooking Corner</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width-device-width, initial-scale=1.0" />
+    <link href="register.css" rel="stylesheet" type="text/CSS"/>
+    <link href="theme1.css" rel="stylesheet" type="text/CSS"id="theme"/>
+  </head>
+  <body>
+    <header>
+        <nav>
+            <div> <!--Menu -->
+                <ul>
+                    <li id="menu">
+                      <span><button class="btn">
+                            <span class="icon">
+                                <svg viewBox="0 0 175 80" width= "40" height="40">
+                                    <rect width="80" height="15" fill="#f0f0f0" rx="10"></rect>
+                                    <rect y="30" width="80" height="15" fill="#f0f0f0" rx="10"></rect>
+                                    <rect y="60" width="80" height="15" fill="#f0f0f0" rx="10"></rect>
+                                </svg>
+                            </span>
+                            <span class="text">MENU</span>
+                        </button></span>
+                      <ul id="dropDownMenu"> 
+                        <span><li><a href="#">Videos</a></li></span>
+                        <span><li><a href="#">Recommend</a></li></span>
+                        <span><li><a href="#">Cooking tools</a></li></span> 
+                        <span><li><a href="#">Facts</a></li></span>              
+                        <span><li><a href="#">Alternatives</a></li></span>
+                       </ul>
+                    </li>
+                </ul>
+            </div>
+
+            
+            <div id="navBar">
+                <ul id="links">
+                    <li><a id="active" href="#">Home</a></li>
+                    <li><a href="#">Recipes</a></li>
+                    <li><a href="#">Favourites</a></li>
+                    <li><a href="#">Meal History</a></li>
+                    <li><a id="signin-btn" href="login.html">Sign in</a></li>
+
+                </ul>
+            </div>
+
+            <div id="headerLogo"> <!--Logo / Theme-->
+                <h1 id="logo"><span>Cooking</span> Corner</h1>
+                 <!--Dark/Light Mode -->
+                <label class="switch">
+                    <input type="checkbox"id="themeToggle">
+                    <span class="slider"></span>
+                </label>
+            </div>
+            
+        </nav>
+      </header>
+      <div style="height: 300px; margin-top: 200px">
+        <div id="text">
+          <h2 style="color: black">jomana mahmoud elsaghier ahmed<br>20230147</h2>
+        </div>
+        <div id="messageBox" class="message-box">
+          <span id="messageText"></span>
+         <button id="closeBtn">Close</button>
+        </div>
+       </div>
+            <form class="form" id="registrationForm">
+               <div class="header">Sign Up</div>
+               <div class="inputs">
+                  <input id="username" placeholder="Username" class="input" type="text" required >
+                  <input id="email" placeholder="Email" class="input" type="email" required >
+                  <input id="password" placeholder="Password" minlength="4" maxlength="12" class="input" type="password" required>
+                  <input id="confirmPassword" placeholder="Confirm Password" minlength="4" maxlength="12" class="input" type="password" required>
+                  <button class="signup" type="submit" value="Submit">register</button>
+                  <p class="signin-link">Already have an account? <a href="login.html" target="_self">Sign in</a></p>
+               </div>
+            </form>
+    <div class="ad-banner">
+      <a href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.postermywall.com%2Findex.php%2Fart%2Ftemplate%2Fe2f77abafcc26a02451ab8baabb8a32f%2Fluxury-car-ads-design-template&psig=AOvVaw1xbn4BXzPC3qLz1YxuM7IU&ust=1714549585760000&source=images&cd=vfe&opi=89978449&ved=0CBQQjhxqFwoTCPj2kqa56YUDFQAAAAAdAAAAABAE">
+        <img src="images\addjomana2.jpg" alt="Advertisement"></a>
+    </div> 
+    <footer> <!--Footer -->
+        <div id="footerInfo">
+          <h1><span>Cooking</span> Corner</h1>
+        </div>
+  
+        <div>
+          <h5>Company</h5>
+          <a>Terms Of Use</a>
+          <a>Contact Us</a>
+          <a>Privacy Policy</a>
+        </div>
+  
+        <div>
+          <h5>Follow Us</h5>
+          <a>Facebook</a>
+          <a>Twitter</a>
+          <a>Instagram</a>
+          <a>LinkedIn</a>        
+        </div>
+    </footer>
+    <script src="register.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
+       

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="table.css">
+    <link rel="stylesheet" href="theme1.css" id="theme">
+</head>
+<body>
+
+
+    <header>
+        <nav>
+            <div> <!-- Menu -->
+                <ul>
+                    <li id="menu">
+                      <span><button class="btn">
+                            <span class="icon">
+                                <svg viewBox="0 0 175 80" width="40" height="40">
+                                    <rect width="80" height="15" fill="#f0f0f0" rx="10"></rect>
+                                    <rect y="30" width="80" height="15" fill="#f0f0f0" rx="10"></rect>
+                                    <rect y="60" width="80" height="15" fill="#f0f0f0" rx="10"></rect>
+                                </svg>
+                            </span>
+                            <span class="text">MENU</span>
+                        </button></span>
+                      <ul id="dropDownMenu"> 
+                        <span><li><a href="#">Videos</a></li></span>
+                        <span><li><a href="#">Recommend</a></li></span>
+                        <span><li><a href="#">Cooking tools</a></li></span> 
+                        <span><li><a href="#">Facts</a></li></span>              
+                        <span><li><a href="#">Alternatives</a></li></span>
+                       </ul>
+                    </li>
+                </ul>
+            </div>
+
+            
+
+            <div id="navBar">
+                <ul id="links">
+                    <li><a id="active" href="#">Home</a></li>
+                    <li><a href="#">Recipes</a></li>
+                    <li><a href="#">Favourites</a></li>
+                    <li><a href="#">Meal History</a></li>
+                    <li><a id="signin-btn" href="#">Sign in</a></li>
+
+                </ul>
+            </div>
+
+            <div id="headerLogo"> <!-- Logo / Theme -->
+                <h1 id="logo"><span>Cooking</span> Corner</h1>
+                 <!-- Dark/Light Mode -->
+                <label class="switch">
+                    <input type="checkbox"id="themeToggle">
+                    <span class="slider"></span>
+                </label>
+            </div>
+            
+        </nav>
+    </header>
+    <div style="height:2px; margin-top:100px;"></div>
+    <h1 align="center" style="color:brown; font-family:Pacifico; font-style:italic; font-size: 75px;"> Weekly Meal</h1><div> 
+      <h1>name:Jana Nader Nassef<br>
+    id:20230159
+   </h1>
+   <button id="myButton"> click here</button>
+   <div id="thx" class="message" style="display: none;">Welcome to Cooking Corner! </div>
+
+   <script>
+ 
+   let thku=document.getElementById("thx");
+   
+   document.getElementById("myButton").addEventListener("click", function() {
+     thku.style.display="inline-block";
+   });
+   </script>
+        <table id="datatable">
+        <tr>
+            <th><p class="it">Day</p></th>
+            <th><p class="it">Breakfast</p></th>
+            <th><p class="it">Lunch</p></th>
+            <th><p class="it">Dinner </p></th>
+        </tr>
+        
+
+        <tr>
+            <td><p class="te" >Saturday</p></td>
+            <td > <p>Omlette</p> <img src=" images\1.jpg">  </td>
+        
+            <td><p>Spagetti</p> <img src="images\2.jpg" alt=""></td>
+            <td> <p>Yogurt</p><img src="images\3.jpg" ></td>
+    
+        </tr>
+        
+
+        <tr>
+            <td><p class="te" >Sunday</p></td>
+
+            <td> <p>Fruit Salade</p> <img src="images\4.jpg" alt=""></td>
+            <td> <p>chicken </p> <img src="images\5.jpg" alt=""></td>
+            <td> <p> bread with cheese </p>  <img src="images\6.jpg" alt="" ></td>
+        </tr>
+        
+
+        <tr>
+            <td><p class="te" >Monday</p></td>
+
+            <td> <p>shofan </p> <img src="images\7.jpg" ></td>
+            <td> <p>burger </p> <img src=" images\8.jpg"></td>
+            <td> <p>Tuna Sandwich</p> <img src="images\9.jpg"></td>
+        </tr>
+        
+
+        <tr>
+            <td><p class="te" >Tuesday</p></td>
+
+            <td> <p> panecake </p> <img src="images\10.jpg"></td>
+            <td> <p> Meat </p> <img src="images\11.jpg"></td>
+            <td> <p>Fried Potato </p> <img src= "images\12.jpg"></td>
+        </tr>
+    
+
+        <tr>
+            <td><p class="te" >Wednesday</p></td>
+
+            <td> <p>Waffle </p> <img src="images\13.jpg" alt=""></td>
+            <td> <p> Pizza</p> <img src="  images\14.jpg"> </td>
+            <td> <p> White Sauce Pasta </p> <img src="images\15.jpg"></td>
+        </tr>
+        
+
+        <tr>
+            <td><p class="te" >Thursday</p></td>
+
+            <td>  <p>cheese pies </p> <img src="images\16.jpg" alt=""></td>
+            <td> <p>fried fish </p> <img src="images\17.jpg" alt=""></td>
+            <td> <p>  Eggs with Toast </p> <img src="images\18.jpg" alt=""></td>
+        </tr>
+        
+
+        <tr>
+            <td><p class="te" >Friday</p></td>
+
+            <td><p> Avocado </p> <img src="images\19.jpg" alt=""></td>
+            <td><p> Koshari </p> <img src="images\20.jpg"></td>
+            <td> <p>Fried Salamone</p> <img src="images\21.jpg " alt=""></td>
+        </tr>
+    </table>
+
+    </div>
+
+    <footer> <!-- Footer -->
+        <div id="footerInfo">
+          <h1><span>Cooking</span> Corner</h1>
+       
+           
+        </div>
+        
+  
+        <div>
+          <h5>Company</h5>
+          <a>Terms Of Use</a>
+          <a>Contact Us</a>
+          <a>Privacy Policy</a>
+        </div>
+  
+        <div>
+          <h5>Follow Us</h5>
+          <a>Facebook</a>
+          <a>Twitter</a>
+          <a>Instagram</a>
+          <a>LinkedIn</a>        
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

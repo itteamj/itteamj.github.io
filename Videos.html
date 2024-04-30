@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cooking Videos</title>
+  <link rel="stylesheet" href="video.css">
+  <link rel="stylesheet" href="Theme1.css" id="theme"/>
+
+</head>
+<body>
+    <header id="header">
+        <nav>
+            <div>
+                <ul>
+                    <li id="menu">
+                        <span
+                            ><button class="btn">
+                                <span class="icon">
+                                    <svg
+                                        viewBox="0 0 175 80"
+                                        width="40"
+                                        height="40">
+                                        <rect
+                                            width="80"
+                                            height="15"
+                                            fill="#f0f0f0"
+                                            rx="10"></rect>
+                                        <rect
+                                            y="30"
+                                            width="80"
+                                            height="15"
+                                            fill="#f0f0f0"
+                                            rx="10"></rect>
+                                        <rect
+                                            y="60"
+                                            width="80"
+                                            height="15"
+                                            fill="#f0f0f0"
+                                            rx="10"></rect>
+                                    </svg>
+                                </span>
+                                <span class="text">MENU</span>
+                            </button>
+                        </span>
+                        <ul id="dropDownMenu">
+                            <span
+                                ><li><a href="#">Videos</a></li></span
+                            >
+                            <span
+                                ><li><a href="#">Recommend</a></li></span
+                            >
+                            <span
+                                ><li><a href="#">Cooking tools</a></li></span
+                            >
+                            <span
+                                ><li><a href="#">Facts</a></li></span
+                            >
+                            <span
+                                ><li><a href="#">Alternatives</a></li></span
+                            >
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div id="navBar">
+                <ul id="links">
+                    <li
+                        ><a
+                            id="active"
+                            href="Index.html"
+                            >Home</a
+                        ></li
+                    >
+                    <li><a href="#">Recipes</a></li>
+                    <li><a href="#">Favourites</a></li>
+                    <li><a href="#">Meal History</a></li>
+                    <li
+                        ><a
+                            id="signin-btn"
+                            href="#"
+                            >Sign in</a
+                        ></li
+                    >
+                </ul>
+            </div>
+
+            <div id="headerLogo">
+                <!--Logo / Theme-->
+                <h1 id="logo"><span>Cooking</span> Corner</h1>
+                <!--Dark/Light Mode -->
+                <label class="switch">
+                    <input
+                        type="checkbox"  id="themeToggle" />
+                    <span class="slider"></span>
+                </label>
+            </div>
+        </nav>
+    </header> <br></br><br></br>
+  <main>
+    <section class="video">
+      <iframe src=" videos\PIZZA RV.mp4" type="video/mp4 " frameborder="0" allowfullscreen></iframe>
+      <h2>Homemade pizza Tutorial</h2>
+      
+    </section>
+    <section class="video">
+      <iframe src=" videos\pastaRV.mp4  " type="video/mp4   " frameborder="0" allowfullscreen></iframe>
+      <h2>Homemade pasta Tutorial</h2>
+      
+    </section>
+    <section class="video">
+        <iframe src=" videos\SaRV.mp4" frameborder="0" allowfullscreen></iframe>
+        <h2>Homemade chicken Tutorial</h2>
+        
+      </section>
+      <section class="video">
+        <iframe src=" videos\WAFFEL RV.mp4 " frameborder="0" allowfullscreen></iframe>
+        <h2>Homemade Panini Tutorial</h2>
+        
+      </section>
+      <section class="video">
+        <iframe src="  videos\BREAD RV.mp4   " frameborder="0" allowfullscreen></iframe>
+        <h2>Homemade smooth Tutorial</h2>
+        
+      </section>
+      <section class="video">
+        <iframe src="  videos\YELLOW RV.mp4" frameborder="0" allowfullscreen></iframe>
+        <h2>Homemade custard Tutorial</h2>
+        
+      </section>
+
+      <footer id="footer">
+        <div id="footerInfo">
+            <h1><span>Cooking</span> Corner</h1>
+        </div>
+
+        <div>
+            <h5>Company</h5>
+            <a>Terms Of Use</a>
+            <a>Contact Us</a>
+            <a>Privacy Policy</a>
+            <a>Feedback</a>
+        </div>
+
+        <div>
+            <h5>Follow Us</h5>
+            <a>Facebook</a>
+            <a>Twitter</a>
+            <a>Instagram</a>
+            <a>LinkedIn</a>
+        </div>
+    </footer>
+    
+  </main>
+
+  <script>
+    // Get all video sections
+    const videoSections = document.querySelectorAll('.video');
+
+    // Iterate over each video section
+    videoSections.forEach(videoSection => {
+      // Get the video iframe element
+      const videoIframe = videoSection.querySelector('iframe');
+
+      // Add click event listener to the video section
+      videoSection.addEventListener('click', () => {
+        // Check if the video is currently playing
+        if (videoIframe.contentWindow && videoIframe.contentWindow.postMessage) {
+          // Post message to the iframe to play/pause the video
+          videoIframe.contentWindow.postMessage('playPause', '*');
+        }
+      });
+    });
+  </script>
+   <script src="script.js" ></script>
+</body>
+</html>
