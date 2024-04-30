@@ -14,7 +14,7 @@
  
      if (email === storedEmail && password === storedPassword) {
          messageText.innerText = 'Login successful!';
-         Window.location.href='index.html';
+         window.location.href = 'index.html'; 
      } else {
          messageText.innerText = 'Incorrect email or password.';
      }
