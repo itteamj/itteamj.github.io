@@ -22,7 +22,7 @@ body{
 .form{
   position: relative;
   left: 50%;
-  top: -250px;
+  top: -400px;
   display: flex;
   margin-bottom: 40px;
   transform: translateX(-50%);
