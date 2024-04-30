@@ -166,7 +166,7 @@ body{
 
 .ad-banner {
   position: absolute;
-  top: calc(100% + 100px);
+  top: calc(100% + 80px);
   right: 400px; 
 }
 .ad-banner img{
